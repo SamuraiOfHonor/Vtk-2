@@ -1,0 +1,60 @@
+@import "./components/header";@import "./components/footer";
+@import "./breakpoints";
+
+.condition {
+
+    // .condition__container
+
+    &__container {
+    }
+
+    // .condition__inner
+
+    &__inner {
+    }
+
+    // .condition__title
+
+    &__title {
+    }
+
+    // .condition__desc
+
+    &__desc {
+    }
+
+    // .condition__table
+
+    &__table {
+        width: 100%;
+        
+    }
+
+    // .condition__group
+
+    &__group {
+    }
+
+    // .condition__item
+
+    &__item {
+        background-color: khaki;
+    }
+
+    // .condition__name
+
+    &__name {
+        
+    }
+
+    &__item2 {
+        height: 100%;
+    }
+
+    // .condition__name
+
+    &__name2 {
+    }
+}
+.container {
+}

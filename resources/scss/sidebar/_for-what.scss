@@ -1,0 +1,127 @@
+.block-descr {
+    padding: 10px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include sm{
+        padding: 0px 5px;
+    }
+    img{
+        
+
+    }
+    ul{
+
+    }
+    a{
+
+    }
+    &__inner {
+        padding: 15px 112px;
+        background-color: #fff;
+        box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075);
+        border-radius: 10px;
+        @include sm{
+            padding: 0;
+        }
+    }
+
+    // .block-descr__title
+
+    &__title {
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 15px;
+        font-size: 28px;
+        text-align: center;
+        width: 50%;
+        box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075);
+      
+    }
+
+    // .block-descr__title2
+
+    &__title2 {
+        font-weight: bold;
+        font-size: 28px;
+        text-transform: uppercase;
+        font-weight: 400; 
+        line-height: 32px; 
+        margin: 0 0 24px;
+        color: rgb(14, 14, 17);
+    }
+
+    &__title3 {
+        font-weight:bold;
+        font-size: 23px;
+        font-weight: 400; 
+        line-height: 32px; 
+        margin: 0 0 24px;
+        color: rgb(14, 14, 17);
+    }
+
+    // .block-descr__descip
+
+    &__descip {
+        text-align: justify;
+        font-size: 18px; 
+        line-height: 32px;
+        margin: 0 0 24px;
+    }
+
+    // .block-descr__point
+
+    &__point {
+    }
+
+    // .block-descr__item
+
+    &__item {
+        list-style-type: circle;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 35px;
+    }
+
+    &__item2 {
+        list-style-type:decimal;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 35px;
+    }
+
+    &__plush{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @include xl{
+            flex-direction: column;
+        }
+    }
+
+    &__text{
+        margin-top: 20px;
+    }
+
+    &__img{
+        width: 350px;
+        height: 100%;
+        object-fit:contain;
+        border-radius: 10px;
+        border: 2px solid black;
+        @include sm{
+            width: 310px;
+        }
+    }
+}
