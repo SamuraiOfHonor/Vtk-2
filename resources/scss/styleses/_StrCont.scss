@@ -1,0 +1,130 @@
+@import "../breakpoints";
+
+$primary-color: #2e7d32; 
+$primary-dark: #1b5e20;
+$primary-light: #81c784;
+$secondary-color: #f5f5f5;
+$sub-color: #ececec;
+$text-color: #333;
+$white: #ffffff;
+
+.StrCont {
+    margin: 25px 0;
+
+    // .StrCont__Container
+
+    &__Container {
+    }
+
+    // .StrCont__Main-flexs
+
+    &__Main-flexs {
+    }
+
+    // .StrCont__LinkList
+
+    &__LinkList {
+    }
+
+    // .StrCont__MainBlock
+
+    &__MainBlock {
+    }
+
+    // .StrCont__h1
+
+    &__h1 {
+        
+    }
+
+    // .StrCont__p-main
+
+    &__p-main {
+        text-indent: 15px;
+        margin: 10px 10px;
+    }
+
+    // .StrCont__img-block
+
+    &__img-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid $sub-color;
+        gap: 5px;
+        margin: 20px 0;
+        padding: 5px 0;
+    }
+
+    // .StrCont__p-img
+
+    &__p-img {
+    }
+
+    // .StrCont__img-img
+
+    &__img-img {
+    }
+
+		// .StrCont__Vice-ul
+
+		&__Vice-ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+		}
+
+		// .StrCont__Vice-li
+
+		&__Vice-li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+		}
+
+		// .StrCont__Vice-title
+
+		&__Vice-title {
+            font-weight: 600;
+            font-size: 18px;
+            color: $primary-dark;
+		}
+
+		// .StrCont__Vice-Name
+
+		&__Vice-Name {
+		}
+
+		// .StrCont__Vice-adress
+
+		&__Vice-adress {
+		}
+
+		// .StrCont__Vice-number
+
+		&__Vice-number {
+		}
+
+		// .StrCont__Vice-Worktime
+
+		&__Vice-Worktime {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+		}
+        &__link-span{
+            color: $primary-dark;
+        }
+		// .StrCont__Vice-mail
+
+		&__Vice-mail {
+		}
+
+}

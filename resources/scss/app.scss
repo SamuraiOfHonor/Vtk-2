@@ -17,6 +17,9 @@
 @import "./sidebar/video"; 
 @import "./sidebar/xss";
 @import "./sidebar";
+@import "./styleses/LinkList";
+@import "./styleses/BasicInfo";
+@import "./styleses/StrCont";
 #main{
     display: block;
 }
@@ -1021,7 +1024,7 @@ $transition-slow: 0.8s ease-in-out;
         display: flex;
         flex-direction: column;
         gap: 30px;
-        perspective: 1000px; // Для 3D эффекта
+        perspective: 1000px;
     }
 
     

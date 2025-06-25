@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Forms;
 
-use App\Models\form;
+use App\Models\Form;
 use Livewire\Component;
 
 class FormsList extends Component
@@ -10,7 +10,7 @@ class FormsList extends Component
 
     public function index()
     {
-        return form::where('is_active', 1) 
+        return Form::where('is_active', 1) 
         ->get();
     }
 

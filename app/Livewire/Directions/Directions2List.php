@@ -3,7 +3,7 @@
 namespace App\Livewire\Directions;
 
 use App\Models\Direction;
-use App\Models\form;
+use App\Models\Form;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 

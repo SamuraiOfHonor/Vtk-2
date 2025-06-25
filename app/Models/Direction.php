@@ -24,16 +24,16 @@ class Direction extends Model
     ];
 
     public function forms(){
-        return form::whereIn('id',$this->education ?? [])->get();
+        return Form::whereIn('id',$this->education ?? [])->get();
     }
     
     public function form()
     {
-        return $this->belongsTo(form::class);
+        return $this->belongsTo(Form::class);
     }
     public function language()
     {
-        return $this->belongsTo(language::class);
+        return $this->belongsTo(Language::class);
     }
     public function getEducationWithFormNames()
     {

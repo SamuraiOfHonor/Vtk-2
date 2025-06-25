@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Образовательное учреждение, образование" >
         <meta name="description" content="Образовательное учреждение" >
+        <link rel="icon"  href="/storage/Header/images/logo.png">
         <title>Волгоградский Технический Колледж</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         @vite(['resources/css/app.css', 'resources/scss/app.scss', 'resources/js/app.js'])
@@ -17,6 +18,8 @@
         </main>
         @include('partials.footer')
         {{-- Подключение скриптов livewire --}}
+
+        
         <script src="{{ asset('assets/js/app.js') }}"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function() {

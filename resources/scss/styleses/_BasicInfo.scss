@@ -1,0 +1,528 @@
+@import "../breakpoints";
+
+$primary-color: #2e7d32; 
+$primary-dark: #1b5e20;
+$primary-light: #81c784;
+$secondary-color: #f5f5f5;
+$sub-color: #ececec;
+$text-color: #333;
+$white: #ffffff;
+.Educational-h1{
+    font-weight: 500;
+    font-size: 22px;
+    text-shadow: 0 2px 4px rgba(0, 100, 0, 0.1);
+    text-indent: 15px;
+}
+.MainBlock{
+    background-color: $sub-color;
+    border-radius: 5px;
+    padding: 40px 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.BasicInfo {
+    margin: 25px 0;
+    // .BasicInfo__Container
+
+    &__Container {
+    }
+
+    // .BasicInfo__Main-flexs
+
+    &__Main-flexs {
+    }
+
+    // .BasicInfo__LinkList
+
+    &__LinkList {
+    }
+
+    // .BasicInfo__MainBlock
+
+    &__MainBlock {
+        
+    }
+
+    // .BasicInfo__h1
+
+    &__h1 {
+    
+    }
+
+    // .BasicInfo__h2
+
+    &__h2 {
+        font-weight: 700;
+        font-size: 23px;
+        align-items: center;
+        text-align: center;
+        margin: 10px 0;
+        
+        color: $primary-dark;
+    }
+
+     // .BasicInfo__h3
+        
+     &__h3 {
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        color: $primary-dark;
+        margin: 10px;
+    }
+
+    // .BasicInfo__data-block
+
+    &__data-block {
+        margin: 10px 0;
+    }
+
+    // .BasicInfo__data-ul
+
+    &__data-ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        padding: 0 30px;
+    }
+
+    // .BasicInfo__data-li
+
+    &__data-li {
+        list-style: decimal;
+        text-indent: 5px;
+       
+    }
+
+    // .BasicInfo__founder-block
+
+    &__founder-block {
+        margin: 20px 0;
+    }
+
+    // .BasicInfo__founder-p
+
+    &__founder-p {
+        text-indent: 15px;
+        margin: 10px 10px;
+
+    }
+    &__a-founder{
+        color: $primary-dark;
+    }
+    // .BasicInfo__founder-table
+    &__founder-table, &__founder-tr, &__founder-td-M, &__founder-td{
+        border: 1px solid black;
+
+    }
+
+    &__founder-table {
+        width: 100%;
+    }
+    
+    // .BasicInfo__founder-tr
+
+    &__founder-tr {
+
+    }
+
+    // .BasicInfo__founder-td-M
+
+    &__founder-td-M {
+        padding: 5px;
+        font-size: 16px;
+        
+        color: $primary-color;
+        border-radius: 1px solid black;
+    }
+
+    // .BasicInfo__founder-td
+
+    &__founder-td {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    // .BasicInfo__adress-block
+
+    &__adress-block {
+    }
+
+    // .BasicInfo__adress-p
+
+    &__adress-h2 {
+        font-weight: 700;
+        font-size: 18px;
+        align-items: center;
+        text-align: center;
+        margin: 10px 0;
+        
+        color: $primary-dark;
+    }
+
+    // .BasicInfo__adress-block-2
+
+    &__adress-block-2 {
+    }
+
+    // .BasicInfo__p-1
+
+    &__p-1 {
+        align-items: center;
+        color: $text-color;
+        font-size: 14px;
+    }
+
+    // .BasicInfo__adress-ul
+
+    &__adress-ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    // .BasicInfo__adress-li
+
+    &__adress-li {
+        
+    }
+
+    // .BasicInfo__adress-tel-block
+
+    &__adress-tel-block {
+    }
+
+    // .BasicInfo__adress-tel-ul
+
+    &__adress-tel-ul {
+        align-items: center;
+        display: flex;
+        
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    // .BasicInfo__adress-tel-li
+
+    &__adress-tel-li {
+        display: flex;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    // .BasicInfo__mail
+
+    &__mail {
+        color: $primary-color;
+        font-size: 16px;
+    }
+
+    // .BasicInfo__schedule-block
+
+    &__schedule-block {
+        margin: 10px 0 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    // .BasicInfo__schedule-block-1
+
+    &__schedule-block-1 {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    // .BasicInfo__h4
+
+    &__h4 {
+        color: $primary-dark;
+        font-weight: 600;
+    }
+
+    // .BasicInfo__schedule-p
+
+    &__schedule-p {
+
+    }
+
+    // .BasicInfo__branch
+
+    &__branch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    // .BasicInfo__branch-block
+
+    &__branch-block {
+        display: flex;
+    }
+
+    // .BasicInfo__h5
+
+    &__h5 {
+    }
+
+    // .BasicInfo__Branch-ul
+
+    &__Branch-ul {
+    }
+
+    // .BasicInfo__Branch-li
+
+    &__Branch-li {
+    }
+
+    // .BasicInfo__Branch-Supervisor
+
+    &__Branch-Supervisor {
+    }
+
+    // .BasicInfo__branch-adress-block
+
+    &__branch-adress-block {
+        display: flex;
+        gap: 5px;
+    }
+
+    // .BasicInfo__branch-adress-p
+
+    &__branch-adress-p {
+    }
+
+    // .BasicInfo__branch-tel-block
+
+    &__branch-tel-block {
+        display: flex;
+        gap: 5px;
+    }
+
+    // .BasicInfo__branch-tel-ul
+
+    &__branch-tel-ul {
+    }
+
+    // .BasicInfo__branch-tel-li
+
+    &__branch-tel-li {
+    }
+
+    // .BasicInfo__branch-tel-p
+
+    &__branch-tel-p {
+    }
+
+    // .BasicInfo__branch-Email-block
+
+    &__branch-Email-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    // .BasicInfo__branch-Email-ul
+
+    &__branch-Email-ul {
+    }
+
+    // .BasicInfo__branch-Email-li
+
+    &__branch-Email-li {
+    }
+
+    // .BasicInfo__branch-Email-p
+
+    &__branch-Email-p {
+    }
+
+    // .BasicInfo__branch-site-block
+
+    &__branch-site-block {
+        display: flex;
+        gap: 5px;
+    }
+
+    // .BasicInfo__branch-site-link
+
+    &__branch-site-link {
+    }
+
+    // .BasicInfo__branch-operation-block
+
+    &__branch-operation-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .BasicInfo__branch-operation-block-1
+
+    &__branch-operation-block-1 {
+        display: flex;
+        gap: 5px;
+    }
+
+    // .BasicInfo__operation-p
+
+    &__operation-p {
+        word-break: break-word;
+    }
+
+    // .BasicInfo__branch-Dormitory-block
+
+    &__branch-Dormitory-block {
+
+    }
+
+    // .BasicInfo__branch-Dormitory-ul
+
+    &__branch-Dormitory-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    // .BasicInfo__branch-Dormitory-li
+
+    &__branch-Dormitory-li {   
+    }
+
+    // .BasicInfo__branch-Dormitory-p
+
+    &__branch-Dormitory-p {
+    }
+
+    // .BasicInfo__technopark
+
+    &__technopark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // .BasicInfo__technopark-block
+
+    &__technopark-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    // .BasicInfo__technopark-p
+
+    &__technopark-p {
+    }
+
+    // .BasicInfo__technopark-p-3
+
+    &__technopark-p-3 {
+    }
+
+    // .BasicInfo__technopark-ul
+
+    &__technopark-ul {
+    }
+
+    // .BasicInfo__technopark-li
+
+    &__technopark-li {
+    }
+
+    // .BasicInfo__technopark-Email-block
+
+    &__technopark-Email-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;;
+    
+    }
+
+    // .BasicInfo__technoparkh-Email-ul
+
+    &__technoparkh-Email-ul {
+    }
+
+    // .BasicInfo__technopark-Email-li
+
+    &__technopark-Email-li {
+    }
+
+    // .BasicInfo__technopark-Email-p
+
+    &__technopark-Email-p {
+    }
+
+    // .BasicInfo__technopark-site-block
+
+    &__technopark-site-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    // .BasicInfo__technopark-site-link
+
+    &__technopark-site-link {
+        color: $primary-color;
+    }
+
+    // .BasicInfo__addlinks
+
+
+	&__addlinks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0;
+	}
+
+	// .BasicInfo__addlinks-ul
+
+	&__addlinks-ul {
+	}
+
+	// .BasicInfo__addlinks-li
+
+	&__addlinks-li {
+	}
+
+	// .BasicInfo__addlinks-link
+
+	&__addlinks-link {
+        color: $primary-dark;
+	}
+
+
+
+    // .BasicInfo__PartnerMap
+
+    &__PartnerMap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__PartnerMap-a {
+        color: $primary-dark;
+        font-weight: 600;
+    }
+}

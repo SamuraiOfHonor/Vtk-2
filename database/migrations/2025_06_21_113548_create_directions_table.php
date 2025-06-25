@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\language;
+use App\Models\Language;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('type')->comment('Вид образовательной программы');
             $table->string('level')->comment('Реализуемый уровень образования');
             $table->string('Qualification')->comment('Квалификация');
-            $table->foreignIdFor(language::class)->constrained()->onDelete('cascade');
+            $table->foreignIdFor(Language::class)->constrained()->onDelete('cascade');
             $table->string(column: 'accreditation')->comment('Срок действия гос. аккредитации');
             $table->string('Department')->comment('Кафедра');
 

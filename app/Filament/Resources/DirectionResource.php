@@ -27,7 +27,7 @@ use Illuminate\Support\Str;
 class DirectionResource extends Resource
 {
     protected static ?string $model = Direction::class;
-    protected static ?string $navigationLabel = 'Кафедры';
+    protected static ?string $navigationLabel = 'Направления';
     protected static ?string $navigationGroup = 'Кафедры';
     
     protected static ?string $navigationIcon = 'heroicon-o-beaker';
