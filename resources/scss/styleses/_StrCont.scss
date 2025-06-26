@@ -120,7 +120,13 @@ $white: #ffffff;
             text-align: center;
 		}
         &__link-span{
-            color: $primary-dark;
+            color: $primary-color;
+            &:focus{
+                color:$primary-light;
+            }
+            &:hover{
+                color: $primary-dark;
+            }
         }
 		// .StrCont__Vice-mail
 

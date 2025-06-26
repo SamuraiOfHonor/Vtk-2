@@ -61,13 +61,13 @@ class DirectionResource extends Resource
                 ])->columnSpanFull(),
                 Section::make('Информация о кафедре')->schema([
                     TextArea::make('description')
-                        ->label('Описание Кафедры')
+                        ->label('Описание направления')
                         ->required()
-                        ->placeholder('Программы подготовки специалистов среднего звена'),
+                        ->placeholder('Мы учим создавать цифровой мир. Здесь вы освоите...'),
                     TextInput::make('type')
                         ->label('Вид образовательной программы')
                         ->required()
-                        ->placeholder('Мы учим создавать цифровой мир. Здесь вы освоите...'),
+                        ->placeholder('Программы подготовки специалистов среднего звена'),
                     TextInput::make('level')
                         ->label('Реализуемый уровень образования')
                         ->required()
@@ -93,7 +93,7 @@ class DirectionResource extends Resource
            
                 ])->columnSpanFull(),
                 Section::make('Информация о кафедре-2')->schema([
-                    Repeater::make('education')->label('Обучение')->schema([
+                    Repeater::make('form_id')->label('Обучение')->schema([
                         TextInput::make('basic-1')
                             ->label('Базовое образование')
                             ->required()

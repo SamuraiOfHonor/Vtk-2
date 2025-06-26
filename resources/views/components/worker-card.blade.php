@@ -9,7 +9,7 @@
                     <h3 class="employee__post-h3">Должность:</h3>
                     <p class="employee__post-p">{{ $data->position->name }}</p>
                 </div>
-           
+                <button class="employee__button">Подробнее</button>
             </div>
         </a>
 </li>

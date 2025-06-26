@@ -1,0 +1,249 @@
+@import "../breakpoints";
+
+$primary-color: #2e7d32; 
+$primary-dark: #1b5e20;
+$primary-light: #81c784;
+$secondary-color: #f5f5f5;
+$sub-color: #ececec;
+$text-color: #333;
+$white: #ffffff;
+
+.Directions {
+
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+  
+  
+  
+    // .Directions__Container
+    &__Container {
+        position: relative;
+        z-index: 1;
+    }
+  
+    // .Directions__Main-flex
+    &__Main-flex {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 30px rgba(40, 167, 69, 0.15);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(40, 167, 69, 0.2);
+        transition: all 0.3s ease;
+        
+        &:hover {
+            box-shadow: 0 15px 35px rgba(40, 167, 69, 0.25);
+            transform: translateY(-5px);
+        }
+    }
+  
+    // .Directions__Main-Title
+    &__Main-Title {
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--green-color);
+        padding-bottom: 2px;
+        text-indent: 0;
+        border-bottom: 3px solid var(--green-color);
+        margin-bottom: 25px;
+        min-width: 500px;
+        text-align: center;
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        animation: titleAppear 0.8s ease-out;
+  
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: var(--green-light);
+            border-radius: 3px;
+        }
+        @include xxl {
+          min-width: 400px;
+        }
+        @include xl {
+          min-width: 300px;
+        }
+        @include lg {
+            min-width: 200px;
+        }
+        @include md {
+            min-width: 200px;
+        }
+        @include sm {
+            min-width: 200px;
+        }
+    }
+  
+    // .Directions__ul
+    &__ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        
+        @include xxl {
+      
+        }
+        @include xl {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @include lg {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        @include md {
+         
+        }
+        @include sm {
+         
+        }
+    }
+  
+    // .Directions__li
+    &__li {
+        background-color: $sub-color;
+        border-radius: 12px;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        
+        &::after {
+            content: 'Перейти на страницу "Направления"';
+            position: absolute;
+            font-weight: 600;
+            font-size: 14px;
+            bottom: 0;
+            left: 5px;
+            width: 90%;
+            height: 2px;
+            background: var(--green-color);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg,var(--light-2-green), var(--light-1-green));
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        &:hover {
+            transform: translateY(-3px);    
+            &::before {
+                opacity: 0.1;
+            }
+        }
+        &:hover {
+            background-position: left bottom;
+            
+            &::after {
+                transform: scaleX(1);
+                transform-origin: right;
+                
+                
+            }
+        }
+    }
+  
+    // .Directions__links
+    &__links {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+        height: 100%;
+        @include sm {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+  
+    // .Directions__img
+    &__img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        
+        @include sm {
+            width: 100%;
+            max-width: 100%;
+            height: 180px;
+        }
+    }
+  
+    // .Directions__card-Block
+    &__card-Block {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+  
+    // .Directions__name-block
+    &__name-block {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+  
+    // .Directions__code-Number
+    &__code-Number {
+        color: var(--green-color);
+        font-weight: 700;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+  
+    // .Directions__code-Name
+    &__code-Name {
+        font-weight: 600;
+        font-size: 17px;
+        color: #333;
+        line-height: 1.4;
+        transition: color 0.3s ease;
+        word-break: break-word;
+        &:hover {
+            color: var(--green-color);
+        }
+    }
+  
+    // .Directions__button
+    &__button{
+        color: $white;
+        background-color: $primary-color;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        width: 100%;
+        &:hover{
+            background-color: $primary-dark;
+        }  
+        &:focus{
+            transform:scale(1.05);
+        }
+    }
+    
+  }

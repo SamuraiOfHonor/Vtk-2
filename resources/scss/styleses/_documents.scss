@@ -1,0 +1,100 @@
+@import "../breakpoints";
+
+$primary-color: #2e7d32; 
+$primary-dark: #1b5e20;
+$primary-light: #81c784;
+$secondary-color: #f5f5f5;
+$sub-color: #ececec;
+$text-color: #333;
+$white: #ffffff;
+
+.Documents {
+
+    // .Documents__Container
+
+    &__Container {
+    }
+
+    // .Documents__Main-flexs
+
+    &__Main-flexs {
+    }
+
+    // .Documents__LinkList
+
+    &__LinkList {
+    }
+
+    // .Documents__MainBlock
+
+    &__MainBlock {
+    }
+
+    // .Documents__h1
+
+    &__h1 {
+        margin-bottom: 20px;
+        
+    }
+
+    // .Documents__ul-1
+
+    &__ul-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    // .Documents__li-1
+
+    &__li-1 {
+        text-indent: 10px;
+    }
+
+    // .Documents__a
+
+    &__a {
+        
+        color: $primary-color;
+        &:focus{
+            color:$primary-light;
+        }
+        &:hover{
+            color: $primary-dark;
+        }
+    }
+
+    // .Documents__h2
+
+    &__h2 {
+        font-weight: 600;
+        text-indent: 5px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 17px;
+    }
+
+    // .Documents__ul-2
+
+    &__ul-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    // .Documents__li-2
+
+    &__li-2 {
+        text-indent: 10px;
+    }
+}
+.Container {
+}
+.Main-flexs {
+}
+.LinkList {
+}
+.MainBlock {
+}
+
+

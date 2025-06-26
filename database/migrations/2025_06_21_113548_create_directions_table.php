@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string(column: 'accreditation')->comment('Срок действия гос. аккредитации');
             $table->string('Department')->comment('Кафедра');
 
-            $table->json('education')->comment('Базовое образование, форма обучения, срок обучения');
+            $table->json('form_id')->comment('Базовое образование, форма обучения, срок обучения');
             
             $table->boolean('is_active')->default(0);
             $table->boolean('is_popular')->default(0);

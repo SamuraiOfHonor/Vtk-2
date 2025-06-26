@@ -19,13 +19,15 @@ $white: #ffffff;
         
     }
     @include lg {
-         
+         display: flex;
+         flex-direction: column;
+   
     }
     @include md {
          
     }
     @include sm {
-         
+      
     }
 }
 .LinkList {
@@ -141,7 +143,7 @@ $white: #ffffff;
         height: 100%;
         border-bottom: 2px solid $white;
         &::after {
-            content: 's';
+            content: '';
             position: absolute;
             font-weight: 600;
             font-size: 14px;

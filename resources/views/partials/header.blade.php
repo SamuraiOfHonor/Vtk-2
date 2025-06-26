@@ -19,7 +19,7 @@
             <div class="Header__Right-block">
                 <ul class="Header__Right-ul">
                     <li class="Header__Right-li">
-                        <a href="Intelligence/InfoEductaion" class="Header__links">Сведения об образовательной организации</a>
+                        <a href="../Intelligence/InfoEductaion" class="Header__links">Сведения об образовательной организации</a>
                     </li>
                     <li class="Header__Right-li">
                         <a href="/Gallery" class="Header__links">Галерея</a>

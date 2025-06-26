@@ -14,12 +14,12 @@ class Direction extends Model
         'img', 'type', 'level',
         'Qualification', 'language_id',
         'accreditation', 'Department',
-        'education', 'is_active',
+        'form_id', 'is_active',
         'is_popular','description',
     ];
 
     protected $casts = [
-        'education' => 'array',
+        'form_id' => 'array',
     
     ];
 
@@ -37,7 +37,7 @@ class Direction extends Model
     }
     public function getEducationWithFormNames()
     {
-        return collect($this->education)->map(function($item) {
+        return collect($this->form_id)->map(function($item) {
             $form = form::find($item['form_id']); 
             
             return [

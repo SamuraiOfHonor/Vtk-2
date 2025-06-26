@@ -125,7 +125,15 @@ $white: #ffffff;
     // .BasicInfo__founder-tr
 
     &__founder-tr {
-
+        @include lg {
+           max-width: 500px;
+          }
+          @include md {
+            max-width: 400px;
+          }
+          @include sm {
+             max-width: 360px;
+          }
     }
 
     // .BasicInfo__founder-td-M
@@ -217,6 +225,12 @@ $white: #ffffff;
 
     &__mail {
         color: $primary-color;
+        &:focus{
+            color:$primary-light;
+        }
+        &:hover{
+            color: $primary-dark;
+        }
         font-size: 16px;
     }
 
@@ -346,6 +360,13 @@ $white: #ffffff;
     // .BasicInfo__branch-Email-p
 
     &__branch-Email-p {
+        color: $primary-color;
+        &:focus{
+            color:$primary-light;
+        }
+        &:hover{
+            color: $primary-dark;
+        }
     }
 
     // .BasicInfo__branch-site-block
@@ -358,6 +379,13 @@ $white: #ffffff;
     // .BasicInfo__branch-site-link
 
     &__branch-site-link {
+        color: $primary-color;
+        &:focus{
+            color:$primary-light;
+        }
+        &:hover{
+            color: $primary-dark;
+        }
     }
 
     // .BasicInfo__branch-operation-block
@@ -482,6 +510,12 @@ $white: #ffffff;
 
     &__technopark-site-link {
         color: $primary-color;
+        &:focus{
+            color:$primary-light;
+        }
+        &:hover{
+            color: $primary-dark;
+        }
     }
 
     // .BasicInfo__addlinks
@@ -508,7 +542,13 @@ $white: #ffffff;
 	// .BasicInfo__addlinks-link
 
 	&__addlinks-link {
-        color: $primary-dark;
+        color: $primary-color;
+        &:focus{
+            color:$primary-light;
+        }
+        &:hover{
+            color: $primary-dark;
+        }
 	}
 
 
@@ -522,7 +562,13 @@ $white: #ffffff;
         flex-direction: column;
     }
     &__PartnerMap-a {
-        color: $primary-dark;
+        color: $primary-color;
+        &:focus{
+            color:$primary-light;
+        }
+        &:hover{
+            color: $primary-dark;
+        }
         font-weight: 600;
     }
 }
